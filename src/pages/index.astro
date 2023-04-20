@@ -1,0 +1,33 @@
+---
+// import Bapp from "../components/Bapp";
+import PixelScene from "../components/PixelScene";
+---
+
+<!-- <script src="../mainloop.min.js"></script> -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>miniplex example</title>
+  </head>
+  <body>
+    <PixelScene client:only="react" />
+  </body>
+</html>
+
+<style is:global>
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
