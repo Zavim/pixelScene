@@ -83,7 +83,8 @@ const Crystal = () => {
     >
       <icosahedronGeometry args={[0.2]} />
       <meshPhongMaterial
-        color="#2379cf"
+        // color="#2379cf"
+        color="#00ffcf"
         emissive="#143542"
         shininess={10}
         specular="#ffffff"
