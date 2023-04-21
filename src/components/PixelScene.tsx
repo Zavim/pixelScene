@@ -111,7 +111,7 @@ function Scene() {
   );
 
   const [boxPixelTexture, floorPixelTexture] = useTexture(
-    ["textures/checker.png", "textures/checker.png"],
+    ["/checker.png", "/checker.png"],
     ([texture, texture2]) => {
       texture.minFilter = texture.magFilter = THREE.NearestFilter;
       texture.generateMipmaps = false;
