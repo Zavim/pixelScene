@@ -30,6 +30,8 @@
   },
   "devDependencies": {
     "@types/mainloop.js": "^1.0.5",
-    "r3f-perf": "^7.1.2"
+    "@vite-pwa/astro": "^0.0.5",
+    "r3f-perf": "^7.1.2",
+    "workbox-window": "^6.5.4"
   }
 }

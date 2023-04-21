@@ -1,16 +1,27 @@
 ---
-// import Bapp from "../components/Bapp";
+import { pwaInfo } from "virtual:pwa-info";
 import PixelScene from "../components/PixelScene";
 ---
 
-<!-- <script src="../mainloop.min.js"></script> -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon.svg" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
     <meta name="generator" content={Astro.generator} />
-    <title>miniplex example</title>
+    <title>Pixel Scene</title>
+    <meta name="description" content="A starter, pixel-rendered scene" />
+    <script src="/src/pwa.ts"></script>
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
   </head>
   <body>
     <PixelScene client:only="react" />
